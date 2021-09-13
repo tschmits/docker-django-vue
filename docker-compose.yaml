@@ -9,7 +9,7 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-  web:
+  django:
     build: ./django
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
@@ -18,3 +18,9 @@ services:
       - "8000:8000"
     depends_on:
       - db
+  vue:
+    build: ./vue
+    volumes:
+      - ./vue:/app
+    ports:
+      - "8080:8080"

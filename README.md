@@ -11,6 +11,12 @@ The development environment is completely dockerized.
 
 * docker
 
-## Setup
+## Getting started
 
-Within
+Run the following command
+
+```
+$ docker compose up
+```
+
+and browse to [http://localhost:8000](http://localhost:8000).

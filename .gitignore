@@ -1,8 +1,10 @@
-# django
+.DS_Store
+*.local
 
-## generic
+# django
 __pycache__
 
-## specific
-django/data/db
-
+# vue
+node_modules
+dist
+dist-ssr
