@@ -1,0 +1,4 @@
+# requirements.in
+django
+pip-tools
+psycopg2-binary

@@ -3,8 +3,8 @@ version: "3.9"
 services:
   db:
     image: postgres
-    volumes:
-      - ./django/data/db:/var/lib/postgresql/data
+    # volumes:
+    #   - ./django/data/db:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
@@ -13,7 +13,7 @@ services:
     build: ./django
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./django:/code
+      - ./django:/app
     ports:
       - "8000:8000"
     depends_on:
