@@ -1,2 +1,8 @@
 # django
-./django/data/db
+
+## generic
+__pycache__
+
+## specific
+django/data/db
+
